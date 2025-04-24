@@ -16,5 +16,6 @@ tags
 \.netrwhist
 
 ## Application
-/data/config.yaml
 /.env
+/data/*
+!/data/config.yaml.sample

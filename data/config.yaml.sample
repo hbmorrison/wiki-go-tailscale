@@ -1,0 +1,28 @@
+server:
+    host: 0.0.0.0
+    port: 8080
+    # When set to true, allows cookies to be sent over non-HTTPS connections.
+    # WARNING: Only enable this in trusted environments like a homelab
+    # where HTTPS is not available. This reduces security by allowing
+    # cookies to be transmitted in plain text.
+    allow_insecure_cookies: false
+wiki:
+    root_dir: data
+    documents_dir: documents
+    title: "📚 Wiki-Go"
+    owner: wiki.example.com
+    notice: Copyright 2025 © All rights reserved.
+    timezone: America/Vancouver
+    private: false
+    disable_comments: false
+    disable_file_upload_checking: false
+    max_versions: 10
+    # Maximum file upload size in MB
+    max_upload_size: 10
+    # Default language for the wiki interface (en, es, etc.)
+    language: en
+users:
+    - username: admin
+      # This is "admin" - you will be prompted to change it
+      password: $2a$10$R0sOb8m.7XHOGx2RdSe8reY.Ouqfw0g9SltPTzusCIWKmmJFzZkWC
+      is_admin: true
